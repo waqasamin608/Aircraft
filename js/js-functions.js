@@ -1,0 +1,1 @@
+function extractQuery(a){var b=window.location,c=new RegExp("[?|&]("+a+".*?)(&|$)"),d=c.exec(b);if(d){var e=c.exec(b)[1].split("=")[1];return e=e.split("#")[0],decodeURI(e)}return null}
